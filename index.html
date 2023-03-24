@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<video autoplay loop muted plays-inline class="back-video"> 
+    <source src="./stock-footage-camera-through-math-and-equation-seamless-loop-in-seconds.mp4" type="video/mp4" >
+</video>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter">
+                    <h4 style="color: beige; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">AGE CALCULATOR</h4>
+                </div>
+                <div class="block">
+                    <p class="title">Date</p>
+                    <input type="text" name="date" id="date" placeholder="DD" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <input type="text" name="month" id="month" placeholder="MM" required="required" minlength="1"
+                        maxlength="2" />
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <input type="text" name="year" id="year" placeholder="YYYY" required="required" minlength="4"
+                        maxlength="4" />
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <input style="color: beige;" type="button" name="submit" value="Submit" onclick="age()" />
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
